@@ -1,0 +1,154 @@
+ul {
+    list-style-type: none;
+}
+.menu {
+    position: relative;
+    transition: all 0.5s;
+}
+.hover {
+    width: auto;
+    height: auto;
+    background-color: #333333;
+    display: flex;
+    flex-direction: column;
+    display: none;
+    border-radius: 2px;
+}
+.menu:hover .hover {
+    display: block;
+    position: absolute;
+}
+.hover li:hover p {
+    transition: all 0.3s;
+    color: orange !important;
+    cursor: pointer;
+}
+.slide {
+    position: absolute;
+    z-index: -1;
+}
+main .zIndex {
+    position: relative;
+    z-index: 2;
+}
+[class*=button] {
+    transition: all 0.3s;
+}
+.button1:hover {
+    background-color: rgb(54, 192, 178) !important;
+}
+.button2:hover {
+    background-color: orange !important;
+}
+.bgimg {
+    z-index: 0;
+    position: relative;
+    background-attachment: fixed;
+}
+.bgimg::before {
+    content: "";
+    background-color: #333333a9;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    position: absolute;
+}
+.button4:focus {
+    box-shadow: 0 0 0 0.2rem rgb(178,34,34)
+}
+.sky:hover {
+    background-color: skyblue;
+    color: white !important;
+    transition: 0.1s;
+}
+.tree:hover {
+    background-color: green;
+    color: white !important;
+    transition: 0.1s;
+}
+.mountain:hover {
+    background-color: #30ba8f;
+    color: white !important;
+    transition: 0.1s;
+}
+.wave:hover {
+    background-color: #006994;
+    color: white !important;
+    transition: 0.1s;
+}
+.locations {
+    position: relative;
+}
+.locationsHover {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #333333af;
+    opacity: 0;
+    z-index: 4;
+    transition: 0.3s;
+}
+.locations:hover .locationsHover {
+  opacity: 1;
+}
+.button5:hover {
+    background-color: #98503c;
+    color: white !important;
+}
+input::placeholder {
+    color:white !important;
+}
+input {
+    border-top:none !important;
+    border-right:none !important;
+    border-left:none !important;
+    border-bottom: 2px solid white !important;
+    border-radius: 0% !important;
+    outline: none !important;
+}
+input:focus {
+    box-shadow: none !important;
+    outline: none !important
+}
+.logo {
+    color:rgb(87, 87, 87);
+}
+.sMedia {
+    color: rgb(192, 192, 192);
+    letter-spacing: 4px;
+}
+.one-fifth {
+    transition: all 0.3s;
+    cursor: pointer;
+}
+#fb:hover {
+    background-color: #3b5998;
+    color: white
+}
+#twitter:hover {
+    background-color: #00acee;
+    color: white
+}
+#vimeo:hover {
+    background-color: 	#ADFF2F;
+    color: white
+}
+#basket:hover {
+    background-color: 	#FF69B4;
+    color: white
+}
+#be:hover {
+    background-color:#0000CD;
+    color: white
+}
+.footer {
+    color: rgb(192, 192, 192);
+    letter-spacing: 2px;
+    transition: 0.2s;
+    cursor: pointer;
+}
+.footer:hover {
+    color:orange;
+}

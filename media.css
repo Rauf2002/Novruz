@@ -1,0 +1,50 @@
+@media screen and (min-width:992px) {
+    .later {
+        display: none;
+    }
+    .nav {
+        display: flex;
+        justify-content: center;
+    }
+}
+@media screen and (min-width:0px) and (max-width:991px){
+    .later {
+        display: block;
+    }
+    .nav {
+        display: none;
+    }
+    [class*=divButton] {
+        display: flex;
+        justify-content: center;
+    }
+    .divButton2 {
+        margin-top: 15px;
+    }
+    .DO {
+        display: flex;
+        justify-content: center;
+    }
+    .divButton3 {
+        margin-bottom: 4rem
+    }
+    .mail {
+        justify-content: flex-start !important
+    }
+    .phone {
+        justify-content: flex-end !important
+    }
+    .icons {
+        justify-content: center !important
+    }
+}
+@media screen and (max-width:767px) {
+    .one-fifth {
+        width: 100%;
+        margin-bottom: 0px !important;
+    }
+    .logos {
+        display: flex;
+        flex-direction: column;
+    }
+}
